@@ -100,27 +100,22 @@ const role = document.querySelector(".role");
 const testimonials = [
   {
     name: "alice kein",
-    position: "marketing",
     text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
   },
   {
     name: "elvis presly",
-    position: "singer",
     text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
   },
   {
     name: "naftali bennet",
-    position: "prime minister",
     text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
   },
   {
     name: "donald trump",
-    position: "looser",
     text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
   },
   {
     name: "kelvin klein",
-    position: "designer",
     text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
   },
 ];
