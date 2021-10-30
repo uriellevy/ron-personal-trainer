@@ -89,3 +89,55 @@ if (auto) {
   //run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
+/////TESTIMONIALS///////
+
+const testimonialContainer = document.querySelector(".testimonial-container");
+const testimonial = document.querySelector(".testimonial");
+const userName = document.querySelector(".username");
+const role = document.querySelector(".role");
+
+const testimonials = [
+  {
+    name: "alice kein",
+    position: "marketing",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "elvis presly",
+    position: "singer",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "naftali bennet",
+    position: "prime minister",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "donald trump",
+    position: "looser",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "kelvin klein",
+    position: "designer",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+];
+
+let idx = 1;
+
+function updateTestimonial() {
+  const { name, position, photo, text } = testimonials[idx];
+  testimonial.innerHTML = text;
+  userName.innerHTML = name;
+  role.innerHTML = position;
+
+  idx++;
+
+  if (idx > testimonials.length - 1) {
+    idx = 0;
+  }
+}
+
+setInterval(updateTestimonial, 10000);
