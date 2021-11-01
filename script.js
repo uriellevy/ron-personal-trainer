@@ -1,3 +1,47 @@
+//////TESTIMONIALS/////
+const testimonialContainer = document.querySelector(".testimonial-container");
+const testimonial = document.querySelector(".testimonial");
+const userName = document.querySelector(".username");
+
+const testimonials = [
+  {
+    name: "alice kein",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "elvis presly",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "naftali bennet",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf  a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "donald trump",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. itsבהבהבסהסבהסבהסבה not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+  },
+  {
+    name: "kelvin klein",
+    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf elt and i hate donald trump cause he is a stupis person .",
+  },
+];
+
+let idx = 1;
+
+function updateTestimonial() {
+  const { name, text } = testimonials[idx];
+  testimonial.innerHTML = text;
+  userName.innerHTML = name;
+
+  idx++;
+
+  if (idx > testimonials.length - 1) {
+    idx = 0;
+  }
+}
+
+setInterval(updateTestimonial, 10000);
+
 ///NAVBAR///
 const open_btn = document.querySelector(".open-btn");
 const close_btn = document.querySelector(".close-btn");
