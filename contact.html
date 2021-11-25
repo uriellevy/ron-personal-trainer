@@ -8,9 +8,10 @@
       src="https://kit.fontawesome.com/cf36b23fe1.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="/queries.css">
-    <title>Testimonials</title>
+    <link rel="stylesheet" href="/queries.css" />
+    <title>Ron Levy Personal Trainer</title>
   </head>
   <body>
     <nav class="nav-container">
@@ -41,29 +42,58 @@
         </div>
       </div>
     </nav>
-    <!-- TESTIMONIALS -->
-    <section id="testimonials">
-      <div class="testimonial-container">
-        <div class="progress-bar"></div>
-        <div class="fas fa-quote-right fa-quote"></div>
-        <div class="fas fa-quote-left fa-quote"></div>
-        <p class="testimonial">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-          repellat odit architecto sint, perspiciatis, recusandae, doloremque
-          obcaecati incidunt asperiores pariatur tenetur. Reprehenderit ut
-          incidunt, non ipsa tempora laboriosam, molestiae commodi
-        </p>
-        <div class="user">
-          <div class="user-details">
-            <h4 class="username">mia myles</h4>
-          </div>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-container">
+        <h1 class="title">צור קשר</h1>
+        <div class="form">
+          <form>
+            <input
+              class="form-control"
+              name="name"
+              type="text"
+              id="name"
+              aria-label="Name"
+              placeholder="שם מלא *"
+              required
+            />
+            <input
+              class="form-control"
+              name="email"
+              type="email"
+              id="mail"
+              aria-label="Email"
+              placeholder="אימייל *"
+              required
+            />
+            <input
+              class="form-control"
+              type="tel"
+              id="tel"
+              aria-label="Phone Number"
+              placeholder="מס' טלפון *"
+              required
+              name="phone-number"
+            />
+            <textarea
+              class="message form-control"
+              name="message"
+              id="msg"
+              aria-label="Message"
+              placeholder="הודעה *"
+              required
+            ></textarea>
+            <button type="submit" class="contact-btn form-control">שלח</button>
+          </form>
         </div>
+      </div>
     </section>
+
     <!-- FOOTER -->
     <footer>
       <p class="copyright">copyright &copy; 2021, All rights reserved</p>
       <p class="copyright">Made by Uriel Levy</p>
     </footer>
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
