@@ -5,24 +5,24 @@ const userName = document.querySelector(".username");
 
 const testimonials = [
   {
-    name: "alice kein",
-    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+    name: "דורון שמש",
+    text: "אם פעם הייתי סולד מכל דבר שקשור לספורט, היום זה הפך להיות אפילו קצת כיף. רון מעביר אימונים בצורה מאוד מקצועית ואם זאת גם בצורה מהנה ומגוונת (עם מוזיקה מעולה)",
   },
   {
-    name: "elvis presly",
-    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. its not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+    name: "נטלי אברהם",
+    text: "אני מקבלת מרון הדרכות מקצועיות מאוד וממש מרוצה מהיחס שהוא נותן, כיף להתאמן איתו",
   },
   {
-    name: "naftali bennet",
-    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf  a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+    name: "אסף בן-שמחון",
+    text: "התחלתי את המסע עם רון כשהייתי עם אפס יכולת והיום, כמעט חצי שנה אחרי, אני מרגיש שליטה בכל שריר בגוף שלי, מעבר לאימון רון גם נותן הרבה ידע",
   },
   {
-    name: "donald trump",
-    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf else to do. itsבהבהבסהסבהסבהסבה not a cuincidence that i am right and i hate donald trump cause he is a stupis person .",
+    name: "אביב מחלב",
+    text: "אחרי 3 חודשים של אימונים עם רון אני מרגישה בריאה וחזקה יותר מאי פעם ",
   },
   {
-    name: "kelvin klein",
-    text: "my name is thr fngdd love to read some stuff cause i dont have anythinf elt and i hate donald trump cause he is a stupis person .",
+    name: "נעמה ישי",
+    text: "אין ספק שרון אחד המאמנים התותחים שפגשתי, ופגשתי לא מעט. הוא תמיד מנסה לגוון ולעשות אימונים שלא ישעממו אחרי כמה פעמים. בחור נהדר ללא ספק",
   },
 ];
 
