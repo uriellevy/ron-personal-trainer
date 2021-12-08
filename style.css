@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rubik&family=Zen+Kurenaido&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 :root {
@@ -16,7 +19,7 @@
 /* ************** */
 
 .nav-container {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +35,8 @@
 }
 
 .logo {
+  position: absolute;
+  right: 5%;
   height: 90px;
   width: 220px;
 }
@@ -65,6 +70,11 @@
 .nav-btn .fa-bars {
   color: #fff;
   font-size: 1.8rem;
+}
+
+.close-btn {
+  position: absolute;
+  left: 10%;
 }
 
 .fa-times {
@@ -118,6 +128,7 @@
   padding: 40px;
   position: relative;
   transition-delay: 0s;
+  display: flex;
 }
 
 .nav-white.visible {
@@ -134,6 +145,10 @@
 .list {
   list-style-type: none;
   padding: 0;
+  position: absolute;
+  right: 15%;
+  top: 20%;
+  text-align: right;
 }
 
 .list li {
