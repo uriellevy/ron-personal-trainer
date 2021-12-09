@@ -36,7 +36,76 @@
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .about-text {
+    flex-direction: column;
+  }
+
+  .about-text-1,
+  .about-text-2 {
+    padding: 50px 20px 50px;
+  }
+
+  /* testimonials */
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* ios compatability */
+  .hero-container {
+    background-image: url("/img/background-11.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* ios compatability */
+  .about {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(/img/background-13.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   /* contact */
   .form-control {
     margin-bottom: 1.2rem;
@@ -46,5 +115,16 @@
 
   .message {
     min-height: 10rem;
+  }
+}
+
+@media (max-height: 450px) {
+  .list {
+    position: absolute;
+    right: 15%;
+    top: 40%;
+  }
+  .list li {
+    margin: 7px 0;
   }
 }
