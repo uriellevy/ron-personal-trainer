@@ -316,18 +316,26 @@
 
 .slide .content {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   bottom: 70px;
   left: -600px;
   opacity: 0;
   width: 600px;
-  background-color: var(--primary-color);
-  color: #333;
+  background-color: rgba(68, 68, 68, 0.801);
+  border: 4px solid var(--primary-color);
+  color: #fff;
   padding: 35px;
   border-radius: 10px;
 }
 
 .slide .content h1 {
-  margin-bottom: 10px;
+  margin: 0 12px 12px 12px;
+  text-align: right;
+}
+
+.slide .content p {
+  text-align: center;
 }
 
 .slide.current .content {
@@ -367,21 +375,18 @@
 }
 
 .slide:first-child {
-  background: url("/img/background-6.jpg") no-repeat center center/cover;
+  background: url("/img/background-1.jpg") no-repeat center center/cover;
 }
 .slide:nth-child(2) {
-  background: url("/img/background-8.jpg") no-repeat center top/cover;
+  background: url("/img/background-12.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-  background: url("/img/background-5.jpg") no-repeat center top/cover;
+  background: url("/img/background-7.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(4) {
   background: url("/img/background-9.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(5) {
-  background: url("/img/background-12.jpg") no-repeat center top/cover;
-}
-.slide:nth-child(6) {
   background: url("/img/background-10.jpg") no-repeat center top/cover;
 }
 
@@ -535,6 +540,11 @@
   transition: 0.2s;
 }
 
+.contact-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .contact-btn:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -542,6 +552,38 @@
 
 .contact-btn:active {
   box-shadow: 0px 0px 0px 4px rgba(254, 209, 54, 0.6);
+}
+
+/* ************** */
+/* THANKS PAGE */
+/* ************** */
+.thanks-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
+}
+
+.thanks-container .btn {
+  color: #333;
+  margin: 30px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 6px 12px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.thanks-container .btn:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /* ************** */
